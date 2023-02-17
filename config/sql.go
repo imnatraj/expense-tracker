@@ -16,4 +16,3 @@ func NewPostgresDB(host, dbName, password, user string, port int) (db *gorm.DB) 
 	}
 	return
 }
-

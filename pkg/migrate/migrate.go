@@ -3,15 +3,16 @@ package migrate
 import (
 	"log"
 
-	conf "github.com/natraj/expense-tracker/config"
-	"github.com/natraj/expense-tracker/models"
+	conf "imnatraj/expense-tracker/config"
+	"imnatraj/expense-tracker/models"
+
 	"gorm.io/gorm"
 )
 
 // migrate struct in db
 func migrateTable(db *gorm.DB) {
 	if err := db.AutoMigrate(
-		models.Hello{},
+		models.User{},
 	); err != nil {
 		log.Fatal(err)
 	}

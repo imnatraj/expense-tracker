@@ -5,9 +5,10 @@ import (
 	"errors"
 	"net/http"
 
+	"imnatraj/expense-tracker/models"
+
 	"github.com/go-chi/chi/v5"
 	"github.com/go-playground/validator/v10"
-	"github.com/natraj/expense-tracker/models"
 )
 
 var Validate *validator.Validate

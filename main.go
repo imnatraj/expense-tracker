@@ -16,8 +16,8 @@ limitations under the License.
 package main
 
 import (
-	"github.com/natraj/expense-tracker/cmd"
-	"github.com/natraj/expense-tracker/helper"
+	"imnatraj/expense-tracker/cmd"
+	"imnatraj/expense-tracker/helper"
 )
 
 func init() {

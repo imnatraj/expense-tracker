@@ -4,9 +4,10 @@ import (
 	"log"
 	"net/http"
 
+	v1 "imnatraj/expense-tracker/api/v1"
+	"imnatraj/expense-tracker/middleware"
+
 	"github.com/go-chi/chi/v5"
-	v1 "github.com/natraj/expense-tracker/api/v1"
-	"github.com/natraj/expense-tracker/middleware"
 )
 
 func Api(port, env string) {
@@ -14,7 +15,6 @@ func Api(port, env string) {
 	r.Use(middleware.MetaData())
 	r.Route("/api", func(r chi.Router) {
 		r.Route("/v1", v1.ApiV1(env))
-		r.Route("/v2", v1.ApiV1(env))
 	})
 	log.Fatal(http.ListenAndServe(port, r))
 }

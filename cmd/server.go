@@ -16,7 +16,8 @@ limitations under the License.
 package cmd
 
 import (
-	"github.com/natraj/expense-tracker/api"
+	"imnatraj/expense-tracker/api"
+
 	"github.com/spf13/cobra"
 )
 

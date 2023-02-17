@@ -5,8 +5,8 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/natraj/expense-tracker/helper"
-	"github.com/natraj/expense-tracker/models"
+	"imnatraj/expense-tracker/helper"
+	"imnatraj/expense-tracker/models"
 )
 
 func MetaData() func(http.Handler) http.Handler {

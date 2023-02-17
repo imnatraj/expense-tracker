@@ -18,7 +18,8 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/natraj/expense-tracker/pkg/migrate"
+	"imnatraj/expense-tracker/pkg/migrate"
+
 	"github.com/spf13/cobra"
 )
 
